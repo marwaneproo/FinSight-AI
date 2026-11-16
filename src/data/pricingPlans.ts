@@ -1,0 +1,55 @@
+import type { PricingPlan } from '@/types';
+
+export const pricingPlans: PricingPlan[] = [
+  {
+    name: 'Starter',
+    tier: 'starter',
+    price: 0,
+    yearlyPrice: 0,
+    tagline: 'Get started with essential financial auditing.',
+    features: [
+      'Up to 2 bank statement uploads/month',
+      'Basic expense categorization',
+      '30-day cash flow view',
+      '5 AI Copilot queries/month',
+      'Anomaly detection (basic)',
+    ],
+    cta: 'Start for Free',
+    highlighted: false,
+  },
+  {
+    name: 'Pro Growth',
+    tier: 'pro',
+    price: 29,
+    yearlyPrice: 23,
+    tagline: 'Full AI-powered financial intelligence for growing businesses.',
+    features: [
+      'Unlimited CSV/Excel uploads',
+      'Automated leak & duplicate invoice detection',
+      '90-day AI cash-flow forecasting + scenario simulator',
+      'Unlimited AI Financial Copilot chat',
+      'PDF/Excel executive report export',
+      'Advanced anomaly alert rules',
+    ],
+    cta: 'Upgrade to Pro',
+    highlighted: true,
+    badge: 'Most Popular',
+  },
+  {
+    name: 'Business / CFO',
+    tier: 'business',
+    price: 79,
+    yearlyPrice: 63,
+    tagline: 'Enterprise-grade financial control for multi-entity operations.',
+    features: [
+      'Everything in Pro Growth, plus:',
+      'Multi-entity/multi-account consolidation',
+      'Custom anomaly alert rules',
+      'Automated tax/VAT split',
+      'Priority API & custom ERP export',
+      'Dedicated workspace & support',
+    ],
+    cta: 'Get Business',
+    highlighted: false,
+  },
+];
