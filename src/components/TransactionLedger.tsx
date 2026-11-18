@@ -39,6 +39,7 @@ export function TransactionLedger({ transactions }: TransactionLedgerProps) {
 
   const filtered = useMemo(() => {
     let result = [...transactions];
+    
 
     if (search.trim()) {
       const q = search.toLowerCase();
