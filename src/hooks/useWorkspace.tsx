@@ -36,6 +36,7 @@ export class PlanLimitError extends Error {
 export interface IngestResult {
   dataset: DatasetRecord;
   report: ParseReport | null;
+  
 }
 
 export interface UpgradePrompt {
@@ -56,6 +57,7 @@ export interface Analysis {
   health: HealthScore;
   alerts: TriggeredAlert[];
 }
+
 
 interface WorkspaceContextValue {
   booting: boolean;
