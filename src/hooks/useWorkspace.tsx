@@ -24,6 +24,7 @@ import { currentMonthKey } from '@/lib/defaults';
 
 const ACTIVE_KEY = 'finsight:v2:active';
 
+
 export class PlanLimitError extends Error {
   kind: 'uploads' | 'copilot';
   constructor(kind: 'uploads' | 'copilot', message: string) {
