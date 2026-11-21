@@ -10,6 +10,7 @@ create table if not exists public.workspaces (
   settings    jsonb not null default '{}'::jsonb,
   created_at  timestamptz not null default now()
 );
+
 create unique index if not exists workspaces_owner_uidx on public.workspaces(owner_id);
 
 create table if not exists public.datasets (
@@ -28,6 +29,7 @@ create table if not exists public.datasets (
   created_at      timestamptz not null default now()
 );
 create index if not exists datasets_workspace_idx on public.datasets(workspace_id, created_at desc);
+
 
 create table if not exists public.transactions (
   id            uuid primary key default gen_random_uuid(),
