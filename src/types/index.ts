@@ -21,6 +21,7 @@ export type AnomalyType =
   | 'unusual_amount'
   | 'category_spike';
 
+
 export type AnomalySeverity = 'high' | 'medium';
 export type AnomalyStatus = 'flagged' | 'ignored' | 'refunded';
 
